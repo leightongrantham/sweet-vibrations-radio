@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "links",
+  "info": {
+    "name": "Links",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NavItem1": {
+      "type": "string"
+    },
+    "NavItem2": {
+      "type": "string"
+    }
+  }
+}

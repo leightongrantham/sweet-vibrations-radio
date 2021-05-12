@@ -1,0 +1,2 @@
+(self.webpackChunksweet_vibrations_gatsby=self.webpackChunksweet_vibrations_gatsby||[]).push([[650],{5424:function(e,t,n){"use strict";n.r(t);var a=n(7294),l=n(5444),c=n(2755),o=n(9470);t.default=function(){return a.createElement(c.Z,null,a.createElement(o.Z,{title:"Page two"}),a.createElement("h1",null,"Hi from the second page"),a.createElement("p",null,"Welcome to page 2"),a.createElement(l.Link,{to:"/"},"Go back to the homepage"))}}}]);
+//# sourceMappingURL=component---src-pages-contact-tsx-7a271d685faf7f67e811.js.map

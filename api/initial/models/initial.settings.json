@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "initials",
+  "info": {
+    "name": "initial"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "item1": {
+      "type": "string"
+    },
+    "item2": {
+      "type": "string"
+    }
+  }
+}

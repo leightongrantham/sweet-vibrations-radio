@@ -31,7 +31,7 @@ const Layout = ({children}) => {
 
     return (
         <>
-            <Header siteTitle={ title || `Sweet Vibrations S` }/>
+            <Header siteTitle={ title || `Sweet Vibrations` }/>
             <div
                 style={ {
                     margin: `0 auto`,

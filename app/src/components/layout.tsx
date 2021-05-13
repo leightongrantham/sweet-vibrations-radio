@@ -43,6 +43,11 @@ const Layout = ({children}) => {
                 <footer
                     style={ {
                         marginTop: `2rem`,
+                        margin: `0 auto`,
+                        position: `fixed`,
+                        bottom: 0,
+                        textAlign: `center`,
+                        width: `100%`
                     } }
                 >
                     © { new Date().getFullYear() }, Built by

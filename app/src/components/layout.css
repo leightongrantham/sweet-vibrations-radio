@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
-
+@import '~bulma/css/bulma.min.css';
 
 @font-face {
   font-family: 'Koho';

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "initials",
   "info": {
-    "name": "initial"
+    "name": "initial",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -21,6 +22,18 @@
     },
     "item2": {
       "type": "string"
+    },
+    "image1": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

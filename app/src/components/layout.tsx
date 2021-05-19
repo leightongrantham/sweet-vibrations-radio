@@ -12,26 +12,28 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Header from "./header"
 import './layout.css'
 
-const Layout = ({children}) => {
-    const data = useStaticQuery(graphql`
-         query {
-           allStrapiInitial {
-                 edges {
-                   node {
-                     strapiId
-                     title
-                     item1
-                     item2
-                   }
-                 }
-          }
-    }`);
+const Layout = ({ children }) => {
+    // const data = useStaticQuery(graphql`
+    //      query {
+    //        allStrapiInitial {
+    //              edges {
+    //                node {
+    //                  strapiId
+    //                  title
+    //                  item1
+    //                  item2
+    //                }
+    //              }
+    //       }
+    // }`);
+    //
+    // const title = data.allStrapiInitial.edges[0].node.title;
 
-    const title = data.allStrapiInitial.edges[0].node.title;
 
+    const data = 'Sweet Vibrations';
     return (
         <>
-            <Header siteTitle={ title || `Sweet Vibrations` }/>
+            <Header siteTitle={ `Sweet Vibrations` }/>
             <div
                 style={ {
                     margin: `0 auto`,

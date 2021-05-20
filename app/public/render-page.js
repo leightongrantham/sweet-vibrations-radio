@@ -14,7 +14,7 @@
 
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js")),
-  "component---src-pages-index-tsx": preferDefault(__webpack_require__(/*! ./src/pages/index.tsx */ "./src/pages/index.tsx"))
+  "component---src-pages-contact-tsx": preferDefault(__webpack_require__(/*! ./src/pages/contact.tsx */ "./src/pages/contact.tsx"))
   }
 
 
@@ -5258,19 +5258,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+/* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/navbar */ "./src/components/navbar.tsx");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
 
 
 
 
-const Header = ({
-  siteTitle
-}) => (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("header", {
+const navItem1 = 'Home';
+const navItem2 = 'Contact';
+const navItem3 = 'Shows';
+
+const Header = ({}) => (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("header", {
   style: {
-    background: `white`,
-    marginBottom: `1.45rem`
+    marginBottom: `1.45rem`,
+    position: `absolute`,
+    width: `100%`
   }
-});
+}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_navbar__WEBPACK_IMPORTED_MODULE_2__.default, {
+  navItem1: navItem1,
+  navItem2: navItem2,
+  navItem3: navItem3
+}));
 
 Header.propTypes = {
   siteTitle: prop_types__WEBPACK_IMPORTED_MODULE_1__.string
@@ -5331,14 +5339,9 @@ const Layout = ({
   // }`);
   //
   // const title = data.allStrapiInitial.edges[0].node.title;
-  const data = 'Sweet Vibrations';
-  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_header__WEBPACK_IMPORTED_MODULE_2__.default, {
-    siteTitle: `Sweet Vibrations`
-  }), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_header__WEBPACK_IMPORTED_MODULE_2__.default, null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     style: {
-      margin: `0 auto`,
-      maxWidth: 960,
-      padding: `0 1.0875rem 1.45rem`
+      margin: `0 auto`
     }
   }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("main", null, children), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("footer", {
     style: {
@@ -5359,6 +5362,51 @@ Layout.propTypes = {
   children: prop_types__WEBPACK_IMPORTED_MODULE_1__.node.isRequired
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
+
+/***/ }),
+
+/***/ "./src/components/navbar.tsx":
+/*!***********************************!*\
+  !*** ./src/components/navbar.tsx ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bulma_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bulma-components */ "./node_modules/react-bulma-components/cjs/index.js");
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+
+
+
+
+
+const Nav = ({
+  navItem1,
+  navItem2,
+  navItem3
+}) => {
+  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_3__.Navbar, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_3__.Navbar.Brand, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_3__.Navbar.Burger, null)), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_3__.Navbar.Menu, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_3__.Navbar.Container, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_3__.Navbar.Item, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_3__.Navbar.Link, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/"
+  }, navItem1)), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_3__.Navbar.Dropdown, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_3__.Navbar.Item, {
+    href: "#"
+  }, "Subitem 1"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_3__.Navbar.Item, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/contact/"
+  }, navItem2))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_3__.Navbar.Container, {
+    align: "right"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_3__.Navbar.Item, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/shows/"
+  }, navItem3)))));
+};
+
+Nav.propTypes = {};
+Nav.defaultProps = {};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Nav);
 
 /***/ }),
 
@@ -5455,10 +5503,10 @@ Seo.propTypes = {
 
 /***/ }),
 
-/***/ "./src/pages/index.tsx":
-/*!*****************************!*\
-  !*** ./src/pages/index.tsx ***!
-  \*****************************/
+/***/ "./src/components/two-section-layout.tsx":
+/*!***********************************************!*\
+  !*** ./src/components/two-section-layout.tsx ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5468,10 +5516,77 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.tsx");
-/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.tsx");
-/* harmony import */ var react_bulma_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bulma-components */ "./node_modules/react-bulma-components/cjs/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+
+
+
+
+const TwoSectionLayout = ({
+  titleHeading,
+  bodyText
+}) => (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+  className: 'two-page-layout--container',
+  style: {
+    display: `flex`,
+    height: `100vh`
+  }
+}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+  className: 'two-page-layout--left',
+  style: {
+    backgroundSize: `cover`,
+    width: `50%`,
+    height: `100%`
+  }
+}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", null)), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+  className: 'two-page-layout--right',
+  style: {
+    display: `flex`,
+    justifyContent: `center`,
+    width: `50%`,
+    marginTop: `250px`
+  }
+}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
+  style: {
+    position: 'absolute'
+  }
+}, " ", titleHeading), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+  style: {
+    position: 'absolute',
+    marginTop: `100px`,
+    textAlign: `center`
+  }
+}, " ", bodyText)));
+
+TwoSectionLayout.propTypes = {
+  titleHeading: prop_types__WEBPACK_IMPORTED_MODULE_1__.string,
+  bodyText: prop_types__WEBPACK_IMPORTED_MODULE_1__.string
+};
+TwoSectionLayout.defaultProps = {
+  titleHeading: ``,
+  bodyText: ``
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TwoSectionLayout);
+
+/***/ }),
+
+/***/ "./src/pages/contact.tsx":
+/*!*******************************!*\
+  !*** ./src/pages/contact.tsx ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_two_section_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/two-section-layout */ "./src/components/two-section-layout.tsx");
+/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.tsx");
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.tsx");
 /* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
 
 
@@ -5479,25 +5594,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const ContactPage = () => (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_layout__WEBPACK_IMPORTED_MODULE_3__.default, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_seo__WEBPACK_IMPORTED_MODULE_2__.default, {
+  title: "Contact"
+}), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_two_section_layout__WEBPACK_IMPORTED_MODULE_1__.default, {
+  titleHeading: 'Contact',
+  bodyText: 'All bookings please contact Alexander.goy@icloud.com'
+}));
 
-
-const IndexPage = () => (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_layout__WEBPACK_IMPORTED_MODULE_2__.default, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_seo__WEBPACK_IMPORTED_MODULE_3__.default, {
-  title: "Home"
-}), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("iframe", {
-  src: "https://mixlr.com/users/8273514/embed",
-  width: "100%",
-  height: "180px",
-  scrolling: "no",
-  frameBorder: "no",
-  marginHeight: "0",
-  marginWidth: "0"
-}), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_5__.Columns.Column, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_5__.Card, null, "Hello")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_5__.Columns.Column, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_5__.Card, null, "Hello")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_5__.Columns.Column, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_5__.Card, null, "Hello")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-  to: "/contact/"
-}, "Contact"), " ", (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-  to: "/using-typescript/"
-}, "About")));
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ContactPage);
 
 /***/ }),
 

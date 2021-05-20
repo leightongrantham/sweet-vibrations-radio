@@ -8,11 +8,21 @@
     font-style: normal
 }
 
+
+/* Custom Reset */
+
+
+.navbar {
+  background: none !important;
+}
+
+/**/
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font: 112.5%/1.45em georgia, serif, sans-serif;
-  font-family: 'Koho', serif;
+  font-family: 'Koho', serif !important;
   box-sizing: border-box;
   overflow-y: scroll;
 }

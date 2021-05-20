@@ -9,6 +9,7 @@ import { Notification } from 'react-bulma-components';
 
 const IndexPage = () => (
     <Layout>
+        <div className={ 'index__container' }>
         <Seo title="Home"/>
         <iframe src="https://mixlr.com/users/8273514/embed"
                 width="100%"
@@ -29,10 +30,7 @@ const IndexPage = () => (
                 <Notification color="primary">Third Column</Notification>
             </Columns.Column>
         </Columns>
-        <p>
-            <Link to="/contact/">Contact</Link> <br/>
-            <Link to="/using-typescript/">About</Link>
-        </p>
+        </div>
     </Layout>
 );
 

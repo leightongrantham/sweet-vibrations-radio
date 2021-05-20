@@ -1,32 +1,21 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import { Link } from 'gatsby';
 
-const Header = ({ siteTitle }) => (
+import Nav from '../components/navbar';
+
+const navItem1 = 'Home';
+const navItem2 = 'Contact';
+const navItem3 = 'Shows';
+
+const Header = ({}) => (
     <header
         style={ {
-            background: `white`,
             marginBottom: `1.45rem`,
+            position: `absolute`,
+            width: `100%`
         } }
     >
-        {/*<div*/}
-        {/*    style={ {*/}
-        {/*        margin: `0 auto`,*/}
-        {/*        maxWidth: 960,*/}
-        {/*        padding: `1.45rem 1.0875rem`,*/}
-        {/*    } }*/}
-        {/*>*/}
-        {/*    <h1 style={ { margin: 0 } }>*/}
-        {/*        <Link*/}
-        {/*            to="/"*/}
-        {/*            style={ {*/}
-        {/*                color: `black`,*/}
-        {/*                textDecoration: `none`,*/}
-        {/*            } }*/}
-        {/*        >*/}
-        {/*        </Link>*/}
-        {/*    </h1>*/}
-        {/*</div>*/}
+        <Nav navItem1={ navItem1 } navItem2={ navItem2 } navItem3={ navItem3 } />
     </header>
 );
 

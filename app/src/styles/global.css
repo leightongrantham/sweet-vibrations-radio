@@ -1,1 +1,16 @@
 @import '~bulma/css/bulma.min.css';
+
+.two-page-layout--left {
+    height: 150px;
+    background-color: red;
+    width: 100%;
+    display: flex;
+
+    background-image: url("../images/large_sweet_vibe_tree_aff1b02430.jpeg");
+}
+
+.index__container {
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+}

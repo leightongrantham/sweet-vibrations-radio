@@ -29,16 +29,12 @@ const Layout = ({ children }) => {
     //
     // const title = data.allStrapiInitial.edges[0].node.title;
 
-
-    const data = 'Sweet Vibrations';
     return (
         <>
-            <Header siteTitle={ `Sweet Vibrations` }/>
+            <Header />
             <div
                 style={ {
                     margin: `0 auto`,
-                    maxWidth: 960,
-                    padding: `0 1.0875rem 1.45rem`,
                 } }
             >
                 <main>{ children }</main>

@@ -11,6 +11,7 @@ const ContactPage = () => (
         <TwoSectionLayout
             titleHeading={ 'Contact' }
             bodyText={ 'All bookings please contact Alexander.goy@icloud.com' }/>
+
     </Layout>
 );
 

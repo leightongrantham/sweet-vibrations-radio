@@ -48,9 +48,9 @@ const Layout = ({ children }) => {
                         width: `100%`
                     } }
                 >
-                    © { new Date().getFullYear() }, Built by
-                    { ` ` }
-                    <a target='_blank' href='https://www.linkedin.com/in/leightongrantham/'>Leighton Grantham</a>
+                    {/*© { new Date().getFullYear() }, Built by*/}
+                    {/*{ ` ` }*/}
+                    {/*<a target='_blank' href='https://www.linkedin.com/in/leightongrantham/'>Leighton Grantham</a>*/}
                 </footer>
             </div>
         </>

@@ -14,7 +14,7 @@
 
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js")),
-  "component---src-pages-contact-tsx": preferDefault(__webpack_require__(/*! ./src/pages/contact.tsx */ "./src/pages/contact.tsx"))
+  "component---src-pages-index-tsx": preferDefault(__webpack_require__(/*! ./src/pages/index.tsx */ "./src/pages/index.tsx"))
   }
 
 
@@ -5352,10 +5352,7 @@ const Layout = ({
       textAlign: `center`,
       width: `100%`
     }
-  }, "\xA9 ", new Date().getFullYear(), ", Built by", ` `, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
-    target: "_blank",
-    href: "https://www.linkedin.com/in/leightongrantham/"
-  }, "Leighton Grantham"))));
+  })));
 };
 
 Layout.propTypes = {
@@ -5503,10 +5500,10 @@ Seo.propTypes = {
 
 /***/ }),
 
-/***/ "./src/components/two-section-layout.tsx":
-/*!***********************************************!*\
-  !*** ./src/components/two-section-layout.tsx ***!
-  \***********************************************/
+/***/ "./src/components/socials.tsx":
+/*!************************************!*\
+  !*** ./src/components/socials.tsx ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5516,65 +5513,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+/* harmony import */ var react_bulma_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bulma-components */ "./node_modules/react-bulma-components/cjs/index.js");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
 
 
 
 
-const TwoSectionLayout = ({
-  titleHeading,
-  bodyText
-}) => (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-  className: 'two-page-layout--container',
-  style: {
-    display: `flex`,
-    height: `100vh`
-  }
-}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-  className: 'two-page-layout--left',
-  style: {
-    backgroundSize: `cover`,
-    width: `50%`,
-    height: `100%`
-  }
-}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", null)), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-  className: 'two-page-layout--right',
-  style: {
-    display: `flex`,
-    justifyContent: `center`,
-    width: `50%`,
-    marginTop: `250px`
-  }
-}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
-  style: {
-    position: 'absolute'
-  }
-}, " ", titleHeading), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-  style: {
-    position: 'absolute',
-    marginTop: `100px`,
-    textAlign: `center`
-  }
-}, " ", bodyText)));
-
-TwoSectionLayout.propTypes = {
-  titleHeading: prop_types__WEBPACK_IMPORTED_MODULE_1__.string,
-  bodyText: prop_types__WEBPACK_IMPORTED_MODULE_1__.string
+const Socials = () => {
+  return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_2__.Icon, {
+    style: {
+      margin: `2rem auto`,
+      position: `fixed`,
+      bottom: 0,
+      textAlign: `center`,
+      width: `100%`
+    }
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+    target: "_blank",
+    href: "https://www.facebook.com/katbrownsugar/"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
+    className: "fab fa-facebook"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+    target: "_blank",
+    href: "https://www.instagram.com/katbrownsugar/?hl=en"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
+    className: "fab fa-instagram"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+    target: "_blank",
+    href: "https://twitter.com/katbrownsugar?lang=en"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
+    className: "fab fa-twitter"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+    target: "_blank",
+    href: "https://soundcloud.com/katbrownsugar"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
+    className: "fab fa-soundcloud"
+  })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+    target: "_blank",
+    href: "https://open.spotify.com/artist/7tLCeRXlvjRK6wlYvNceK0?si=ednNrc05QBKURZuqNc1J4Q&nd=1"
+  }, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
+    className: "fab fa-spotify"
+  })));
 };
-TwoSectionLayout.defaultProps = {
-  titleHeading: ``,
-  bodyText: ``
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TwoSectionLayout);
+
+Socials.propTypes = {};
+Socials.defaultProps = {};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Socials);
 
 /***/ }),
 
-/***/ "./src/pages/contact.tsx":
-/*!*******************************!*\
-  !*** ./src/pages/contact.tsx ***!
-  \*******************************/
+/***/ "./src/pages/index.tsx":
+/*!*****************************!*\
+  !*** ./src/pages/index.tsx ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5584,9 +5575,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_two_section_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/two-section-layout */ "./src/components/two-section-layout.tsx");
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.tsx");
 /* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.tsx");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.tsx");
+/* harmony import */ var _components_socials__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/socials */ "./src/components/socials.tsx");
+/* harmony import */ var react_bulma_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bulma-components */ "./node_modules/react-bulma-components/cjs/index.js");
 /* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
 
 
@@ -5594,14 +5586,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const ContactPage = () => (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_layout__WEBPACK_IMPORTED_MODULE_3__.default, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_seo__WEBPACK_IMPORTED_MODULE_2__.default, {
-  title: "Contact"
-}), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_two_section_layout__WEBPACK_IMPORTED_MODULE_1__.default, {
-  titleHeading: 'Contact',
-  bodyText: 'All bookings please contact Alexander.goy@icloud.com'
-}));
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ContactPage);
+
+const IndexPage = () => (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_layout__WEBPACK_IMPORTED_MODULE_1__.default, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+  className: 'index__container'
+}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_seo__WEBPACK_IMPORTED_MODULE_2__.default, {
+  title: "Home"
+}), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_5__.Columns, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_5__.Columns.Column, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_5__.Notification, {
+  color: "primary"
+}, "First Column")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_5__.Columns.Column, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_5__.Notification, {
+  color: "primary"
+}, "Second Column")), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_5__.Columns.Column, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_bulma_components__WEBPACK_IMPORTED_MODULE_5__.Notification, {
+  color: "primary"
+}, "Third Column"))), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_socials__WEBPACK_IMPORTED_MODULE_3__.default, null)));
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
 
 /***/ }),
 

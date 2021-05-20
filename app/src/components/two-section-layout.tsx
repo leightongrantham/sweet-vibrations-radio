@@ -1,9 +1,8 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import { graphql, useStaticQuery } from 'gatsby';
-import Header from './header';
+import Socials from './socials';
 
-const TwoSectionLayout = ({titleHeading, bodyText}) => (
+const TwoSectionLayout = ({ titleHeading, bodyText }) => (
         <div className={ 'two-page-layout--container' }
              style={ {display: `flex`, height: `100vh`} }>
             <div className={ 'two-page-layout--left' }
@@ -28,6 +27,8 @@ const TwoSectionLayout = ({titleHeading, bodyText}) => (
                     textAlign: `center`,
                 } }> { bodyText }
                 </p>
+
+                <Socials/>
             </div>
         </div>
 );

@@ -2,12 +2,13 @@ import * as React from "react";
 
 import Layout from '../components/layout';
 import Seo from "../components/seo";
+import Socials from '../components/socials';
 
 const ShowsPage = () => (
     <Layout>
-        <Seo title="Home"/>
         <Seo title="Shows"/>
-        <h1>Previous Shows</h1>
+
+        <Socials/>
     </Layout>
 );
 

@@ -1,6 +1,48 @@
 @import '~bulma/css/bulma.min.css';
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 
+:root {
+    --peach: #f08969;
+}
+
+/* Custom Reset */
+.navbar {
+    background: none !important;
+    color: black !important;
+}
+
+.navbar-end, .navbar-start {
+    margin: 0.5rem auto auto !important;
+}
+
+a.navbar-item:hover {
+    background: none !important;
+    /*color: #3273dc;*/
+}
+
+#gatsby-focus-wrapper > header > nav > div.navbar-menu a {
+    color: black;
+}
+
+#gatsby-focus-wrapper > header > nav > div.navbar-menu a:hover {
+    opacity: 0.8;
+}
+
+/**/
+.index__banner {
+    justify-content: center;
+    display: flex;
+    height: 35vh;
+    background: var(--peach);
+}
+
+.index__banner__h1 {
+    position: absolute;
+    bottom: 0;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
 .two-page-layout--left {
     height: 150px;
     background-color: red;

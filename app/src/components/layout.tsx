@@ -12,7 +12,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Header from "./header"
 import './layout.css'
 
-const Layout = ({ children }) => {
+const Layout = ({children}) => {
     // const data = useStaticQuery(graphql`
     //      query {
     //        allStrapiInitial {
@@ -31,13 +31,15 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <Header />
+            <Header/>
             <div
                 style={ {
                     margin: `0 auto`,
                 } }
             >
-                <main>{ children }</main>
+                <main>
+                    { children }
+                </main>
                 <footer
                     style={ {
                         marginTop: `2rem`,
@@ -48,9 +50,9 @@ const Layout = ({ children }) => {
                         width: `100%`
                     } }
                 >
-                    {/*© { new Date().getFullYear() }, Built by*/}
-                    {/*{ ` ` }*/}
-                    {/*<a target='_blank' href='https://www.linkedin.com/in/leightongrantham/'>Leighton Grantham</a>*/}
+                    {/*© { new Date().getFullYear() }, Built by*/ }
+                    {/*{ ` ` }*/ }
+                    {/*<a target='_blank' href='https://www.linkedin.com/in/leightongrantham/'>Leighton Grantham</a>*/ }
                 </footer>
             </div>
         </>

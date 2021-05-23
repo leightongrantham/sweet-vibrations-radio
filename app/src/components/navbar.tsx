@@ -9,7 +9,7 @@ import {
     Route,
 } from 'react-router-dom';
 
-const Nav = ({ navItem1, navItem2, navItem3 }) => {
+const NavigationBar = ({ navItem1, navItem2, navItem3 }) => {
     return (
         <Navbar>
             <Navbar.Brand>
@@ -36,8 +36,8 @@ const Nav = ({ navItem1, navItem2, navItem3 }) => {
     )
 };
 
-Nav.propTypes = {};
+NavigationBar.propTypes = {};
 
-Nav.defaultProps = {};
+NavigationBar.defaultProps = {};
 
-export default Nav;
+export default NavigationBar;

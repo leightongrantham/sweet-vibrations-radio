@@ -32,29 +32,24 @@ const Layout = ({children}) => {
     return (
         <>
             <Header/>
-            <div
+            <main>
+                { children }
+            </main>
+            <footer
                 style={ {
+                    marginTop: `2rem`,
                     margin: `0 auto`,
+                    position: `fixed`,
+                    bottom: 0,
+                    textAlign: `center`,
+                    width: `100%`,
                 } }
             >
-                <main>
-                    { children }
-                </main>
-                <footer
-                    style={ {
-                        marginTop: `2rem`,
-                        margin: `0 auto`,
-                        position: `fixed`,
-                        bottom: 0,
-                        textAlign: `center`,
-                        width: `100%`
-                    } }
-                >
-                    {/*© { new Date().getFullYear() }, Built by*/ }
-                    {/*{ ` ` }*/ }
-                    {/*<a target='_blank' href='https://www.linkedin.com/in/leightongrantham/'>Leighton Grantham</a>*/ }
-                </footer>
-            </div>
+                <h1></h1>
+                {/*© { new Date().getFullYear() }, Built by*/ }
+                {/*{ ` ` }*/ }
+                {/*<a target='_blank' href='https://www.linkedin.com/in/leightongrantham/'>Leighton Grantham</a>*/ }
+            </footer>
         </>
     )
 };

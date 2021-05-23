@@ -7,7 +7,6 @@ import Socials from '../components/socials';
 const ShowsPage = () => (
     <Layout>
         <Seo title="Shows"/>
-
         <Socials/>
     </Layout>
 );

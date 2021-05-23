@@ -8,7 +8,12 @@
 /* Custom Reset */
 .navbar {
     background: none !important;
-    color: black !important;
+    text-decoration: none;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.2em !important;
+    font-size: 14px !important;
 }
 
 .navbar-end, .navbar-start {
@@ -17,15 +22,16 @@
 
 a.navbar-item:hover {
     background: none !important;
-    /*color: #3273dc;*/
+    opacity: 0.5;
+    transition: all 0.4s ease;
 }
 
-#gatsby-focus-wrapper > header > nav > div.navbar-menu a {
-    color: black;
+#gatsby-focus-wrapper > header > div > nav > div.navbar-menu > div > a > a {
+    color: black !important;
 }
 
-#gatsby-focus-wrapper > header > nav > div.navbar-menu a:hover {
-    opacity: 0.8;
+#gatsby-focus-wrapper > header > nav > div.navbar-menu > div > a > a {
+    color: black !important;
 }
 
 /**/

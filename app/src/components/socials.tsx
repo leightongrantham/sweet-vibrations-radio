@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Icon } from 'react-bulma-components';
-import { Box } from 'react-bulma-components';
 
 const Socials = () => {
     return (

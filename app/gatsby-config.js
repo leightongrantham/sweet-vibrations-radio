@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `Gatsby Default Starter`,
+        title: `Sweet Vibrations Radio`,
         description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
         author: `@gatsbyjs`,
     },
@@ -38,6 +38,17 @@ module.exports = {
                     "header"
                 ],
                 queryLimit: 1000,
+            },
+        },
+        {
+            resolve: `gatsby-plugin-emotion`,
+            options: {
+                // Accepts the following options, all of which are defined by `@emotion/babel-plugin` plugin.
+                // The values for each key in this example are the defaults the plugin uses.
+                sourceMap: true,
+                autoLabel: "dev-only",
+                labelFormat: `[local]`,
+                cssPropOptimization: true,
             },
         },
         // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -13,43 +13,43 @@ import Header from "./header"
 import './layout.css'
 
 const Layout = ({children}) => {
-    const data = useStaticQuery(graphql`
-         query {
-           allStrapiInitial {
-                 edges {
-                   node {
-                     strapiId
-                     title
-                     item1
-                     item2
-                   }
-                 }
-          }
-    }`);
-
-    const title = data.allStrapiInitial.edges[0].node.title;
+    // const data = useStaticQuery(graphql`
+    //      query {
+    //        allStrapiInitial {
+    //              edges {
+    //                node {
+    //                  strapiId
+    //                  title
+    //                  item1
+    //                  item2
+    //                }
+    //              }
+    //       }
+    // }`);
+    //
+    // const title = data.allStrapiInitial.edges[0].node.title;
 
     return (
         <>
-            <Header siteTitle={ title || `Sweet Vibrations` }/>
-            <div
+            <Header/>
+            <main>
+                { children }
+            </main>
+            <footer
                 style={ {
+                    marginTop: `2rem`,
                     margin: `0 auto`,
-                    maxWidth: 960,
-                    padding: `0 1.0875rem 1.45rem`,
+                    position: `fixed`,
+                    bottom: 0,
+                    textAlign: `center`,
+                    width: `100%`,
                 } }
             >
-                <main>{ children }</main>
-                <footer
-                    style={ {
-                        marginTop: `2rem`,
-                    } }
-                >
-                    © { new Date().getFullYear() }, Built by
-                    { ` ` }
-                    <a target='_blank' href='https://www.linkedin.com/in/leightongrantham/'>Leighton Grantham</a>
-                </footer>
-            </div>
+                <h1></h1>
+                {/*© { new Date().getFullYear() }, Built by*/ }
+                {/*{ ` ` }*/ }
+                {/*<a target='_blank' href='https://www.linkedin.com/in/leightongrantham/'>Leighton Grantham</a>*/ }
+            </footer>
         </>
     )
 };

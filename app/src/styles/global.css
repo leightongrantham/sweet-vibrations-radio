@@ -1,0 +1,78 @@
+@import '~bulma/css/bulma.min.css';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+:root {
+    --peach: #f08969;
+}
+
+/* Custom Reset */
+.navbar {
+    background: none !important;
+    text-decoration: none;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.2em !important;
+    font-size: 14px !important;
+}
+
+.navbar-end, .navbar-start {
+    margin: 0.5rem auto auto !important;
+}
+
+a.navbar-item:hover {
+    background: none !important;
+    opacity: 0.5;
+    transition: all 0.4s ease;
+}
+
+#gatsby-focus-wrapper > header > div > nav > div.navbar-menu > div > a > a {
+    color: black !important;
+}
+
+#gatsby-focus-wrapper > header > nav > div.navbar-menu > div > a > a {
+    color: black !important;
+}
+
+/**/
+.index__banner {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    background: var(--peach);
+}
+
+.index__banner__h1 {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.two-page-layout--left {
+    height: 150px;
+    background-color: red;
+    width: 100%;
+    display: flex;
+
+    background-image: url("../images/large_sweet_vibe_tree_aff1b02430.jpeg");
+}
+
+.index__container {
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.icon > a {
+    margin: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: black;
+}
+
+.icon > a:hover {
+    opacity: 0.7;
+}

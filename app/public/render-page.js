@@ -14,7 +14,8 @@
 
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js")),
-  "component---src-pages-index-tsx": preferDefault(__webpack_require__(/*! ./src/pages/index.tsx */ "./src/pages/index.tsx"))
+  "component---src-pages-index-tsx": preferDefault(__webpack_require__(/*! ./src/pages/index.tsx */ "./src/pages/index.tsx")),
+  "component---src-pages-shows-tsx": preferDefault(__webpack_require__(/*! ./src/pages/shows.tsx */ "./src/pages/shows.tsx"))
   }
 
 
@@ -5268,7 +5269,7 @@ const navItem1 = 'Home';
 const navItem2 = 'Contact';
 const navItem3 = 'Shows';
 
-const Header = ({}) => {
+const Header = () => {
   if (isIndexPage() === false) {
     return (0,_emotion_react__WEBPACK_IMPORTED_MODULE_3__.jsx)("header", {
       style: {
@@ -5310,9 +5311,7 @@ Header.defaultProps = {
 const isIndexPage = () => {
   const url = typeof window !== 'undefined' ? window.location.href : ''; // Todo change to deployment urls
 
-  if (url === 'http://localhost:8000/contact') {
-    return true;
-  }
+  return url !== 'http://localhost:8000/contact/';
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
@@ -5585,6 +5584,51 @@ Socials.defaultProps = {};
 
 /***/ }),
 
+/***/ "./src/components/soundcloud-player.tsx":
+/*!**********************************************!*\
+  !*** ./src/components/soundcloud-player.tsx ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+
+
+
+const SoundcloudPlayer = () => (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+  style: {
+    display: `flex`,
+    position: `relative`,
+    top: `110px`,
+    alignItems: `center`,
+    justifyContent: `center`,
+    width: `100%`,
+    height: `100vh`
+  }
+}, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_1__.jsx)("iframe", {
+  style: {
+    position: `absolute`,
+    width: `65%`,
+    height: `50%`
+  },
+  width: "434",
+  height: "500",
+  scrolling: "no",
+  frameBorder: "no",
+  src: "https://w.soundcloud.com/player/?visual=false&url=https%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F1058761825&show_artwork=true&auto_play=false&show_playcount=true&show_comments=true&color=%23ff5500&height=613&width=434",
+  className: "embed-code-player__frame"
+}));
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SoundcloudPlayer);
+
+/***/ }),
+
 /***/ "./src/pages/index.tsx":
 /*!*****************************!*\
   !*** ./src/pages/index.tsx ***!
@@ -5632,6 +5676,39 @@ const IndexPage = () => (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_com
 })), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_socials__WEBPACK_IMPORTED_MODULE_3__.default, null));
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
+
+/***/ }),
+
+/***/ "./src/pages/shows.tsx":
+/*!*****************************!*\
+  !*** ./src/pages/shows.tsx ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.tsx");
+/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.tsx");
+/* harmony import */ var _components_socials__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/socials */ "./src/components/socials.tsx");
+/* harmony import */ var _components_soundcloud_player__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/soundcloud-player */ "./src/components/soundcloud-player.tsx");
+/* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.esm.js");
+
+
+
+
+
+
+
+const ShowsPage = () => (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_layout__WEBPACK_IMPORTED_MODULE_1__.default, null, (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_seo__WEBPACK_IMPORTED_MODULE_2__.default, {
+  title: "Shows"
+}), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_soundcloud_player__WEBPACK_IMPORTED_MODULE_4__.default, null), (0,_emotion_react__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_socials__WEBPACK_IMPORTED_MODULE_3__.default, null));
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ShowsPage);
 
 /***/ }),
 

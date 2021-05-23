@@ -4,6 +4,7 @@ import { Icon } from 'react-bulma-components';
 const Socials = () => {
     return (
         <Icon
+            className={'animate__animated animate__fadeInUp'}
             style={ {
                 margin: `2rem auto`,
                 position: `fixed`,

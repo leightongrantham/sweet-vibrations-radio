@@ -2058,6 +2058,11 @@
   resolved "https://registry.npmjs.org/@types/node/-/node-15.0.1.tgz"
   integrity sha512-TMkXt0Ck1y0KKsGr9gJtWGjttxlZnnvDtphxUOSd0bfaR6Q1jle+sPvrzNR1urqYTWMinoKvjKfXUGsumaO1PA==
 
+"@types/node@^14.0.11":
+  version "14.17.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.17.0.tgz#3ba770047723b3eeb8dc9fca02cce8a7fb6378da"
+  integrity sha512-w8VZUN/f7SSbvVReb9SWp6cJFevxb4/nkG65yLAya//98WgocKm5PLDAtSs5CtJJJM+kHmJjO/6mmYW4MHShZA==
+
 "@types/node@^14.14.10":
   version "14.14.44"
   resolved "https://registry.npmjs.org/@types/node/-/node-14.14.44.tgz"
@@ -2111,6 +2116,15 @@
   version "17.0.5"
   resolved "https://registry.npmjs.org/@types/react/-/react-17.0.5.tgz"
   integrity sha512-bj4biDB9ZJmGAYTWSKJly6bMr4BLUiBrx9ujiJEoP9XIDY9CTaPGxE5QWN/1WjpPLzYF7/jRNnV2nNxNe970sw==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^16.9.35":
+  version "16.14.6"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.6.tgz#d933a2a6bc1bfe320a5eea480e8f45ba8126d6ee"
+  integrity sha512-Ol/aFKune+P0FSFKIgf+XbhGzYGyz0p7g5befSt4rmbzfGLaZR0q7jPew9k7d3bvrcuaL8dPy9Oz3XGZmf9n+w==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -2456,6 +2470,11 @@ alphanum-sort@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npmjs.org/alphanum-sort/-/alphanum-sort-1.0.2.tgz"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
+
+animate.css@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-4.1.1.tgz#614ec5a81131d7e4dc362a58143f7406abd68075"
+  integrity sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
 
 anser@^2.0.1:
   version "2.0.1"
@@ -8011,6 +8030,11 @@ jsesc@~0.5.0:
   resolved "https://registry.npmjs.org/jsesc/-/jsesc-0.5.0.tgz"
   integrity sha1-597mbjXW/Bb3EP6R1c9p9w8IkR0=
 
+jsmidgen@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/jsmidgen/-/jsmidgen-0.1.5.tgz#ad0afd6375eb12f51064025393ce3baec380585d"
+  integrity sha1-rQr9Y3XrEvUQZAJTk847rsOAWF0=
+
 json-buffer@3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/json-buffer/-/json-buffer-3.0.0.tgz"
@@ -8237,6 +8261,11 @@ load-json-file@^2.0.0:
     parse-json "^2.2.0"
     pify "^2.0.0"
     strip-bom "^3.0.0"
+
+load-script@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
+  integrity sha1-BJGTngvuVkPuSUp+PaPSuscMbKQ=
 
 loader-runner@^4.2.0:
   version "4.2.0"
@@ -8816,6 +8845,18 @@ micromatch@^4.0.2:
   dependencies:
     braces "^3.0.1"
     picomatch "^2.2.3"
+
+midi-file-parser@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/midi-file-parser/-/midi-file-parser-1.0.0.tgz#175a013f277e9d26acf94cfe6c03b13abb0a1e9e"
+  integrity sha1-F1oBPyd+nSas+Uz+bAOxOrsKHp4=
+
+"midiconvert@github:jsphweid/MidiConvert":
+  version "0.4.3"
+  resolved "https://codeload.github.com/jsphweid/MidiConvert/tar.gz/96d0c66030a01d05b9708a1b0304d72d5d90fbd1"
+  dependencies:
+    jsmidgen "^0.1.5"
+    midi-file-parser "^1.0.0"
 
 mime-db@1.47.0, "mime-db@>= 1.43.0 < 2", mime-db@^1.28.0:
   version "1.47.0"
@@ -10783,6 +10824,33 @@ react-side-effect@^2.1.0:
   resolved "https://registry.npmjs.org/react-side-effect/-/react-side-effect-2.1.1.tgz"
   integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
 
+react-simple-soundcloud-widget@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/react-simple-soundcloud-widget/-/react-simple-soundcloud-widget-0.0.5.tgz#283820573db83212196235d0021587465b3d8999"
+  integrity sha512-liPVSC4wpE+ZiK/LPZrbd3pOI+NkiPYuY2h1Mx+KztoNiIaQjuk+v2uWGPXLHF/sCj4lBqp910DJ20Dwemut9w==
+  dependencies:
+    load-script "^1.0.0"
+    midiconvert "github:jsphweid/MidiConvert"
+
+react-soundcloud-embedded@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/react-soundcloud-embedded/-/react-soundcloud-embedded-2.0.7.tgz#b92a1f0b58d7dd8fd18adf60be026f6bc8eba136"
+  integrity sha512-pPguCu1nyFN2WNGvNJ/zdboy+3gfm2tn7MbC97yOCfn5fRvlpUx/uGcaxgZs2cnBF5FziNzvyWCfGhsIwiK91Q==
+  dependencies:
+    "@types/node" "^14.0.11"
+    "@types/react" "^16.9.35"
+    react "^16.13.1"
+    typescript "^3.9.5"
+
+react@^16.13.1:
+  version "16.14.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
+  integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+
 react@^17.0.1:
   version "17.0.1"
   resolved "https://registry.npmjs.org/react/-/react-17.0.1.tgz"
@@ -12639,6 +12707,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typescript@^3.9.5:
+  version "3.9.9"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.9.tgz#e69905c54bc0681d0518bd4d587cc6f2d0b1a674"
+  integrity sha512-kdMjTiekY+z/ubJCATUPlRDl39vXYiMV9iyeMuEuXZh2we6zz80uovNN2WlAxmmdE/Z/YQe+EbOEXB5RHEED3w==
 
 typescript@^4.2.4:
   version "4.2.4"

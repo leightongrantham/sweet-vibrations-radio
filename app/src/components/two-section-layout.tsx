@@ -3,7 +3,7 @@ import * as PropTypes from 'prop-types';
 import Socials from './socials';
 
 const TwoSectionLayout = ({ titleHeading, bodyText }) => (
-        <div className={ 'two-page-layout--container' }
+        <div className={ 'two-page-layout--container animate__animated animate__fadeIn' }
              style={ {display: `flex`, height: `100vh`} }>
             <div className={ 'two-page-layout--left' }
                  style={ {

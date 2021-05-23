@@ -7,7 +7,7 @@ const navItem1 = 'Home';
 const navItem2 = 'Contact';
 const navItem3 = 'Shows';
 
-const Header = ({}) => {
+const Header = () => {
     if (isIndexPage() === false) {
         return (
             <header
@@ -29,8 +29,8 @@ const Header = ({}) => {
                     width: `100%`
                 } }
             >
-                <div className={ 'index__banner' }>
-                    <h1 className={ 'index__banner__h1 ' }> Sweet Vibrations Radio </h1>
+                <div className={ 'index__banner animate__animated animate__fadeIn' }>
+                    <h1 className={ 'index__banner__h1 animate__animated animate__pulse' }> Sweet Vibrations Radio </h1>
                     <NavigationBar navItem1={ navItem1 } navItem2={ navItem2 } navItem3={ navItem3 }/>
                 </div>
             </header>

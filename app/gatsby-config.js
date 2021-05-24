@@ -25,21 +25,21 @@ module.exports = {
                 background_color: `#663399`,
                 theme_color: `#663399`,
                 display: `minimal-ui`,
-                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+                icon: `src/images/thumbnail_sweet_vibe_header_da0347adb1.jpg`, // This path is relative to the root of the site.
             },
         },
         `gatsby-plugin-gatsby-cloud`,
-        {
-            resolve: "gatsby-source-strapi",
-            options: {
-                apiURL: "http://localhost:1337",
-                contentTypes: [
-                    "initial",
-                    "header"
-                ],
-                queryLimit: 1000,
-            },
-        },
+        // {
+        //     resolve: "gatsby-source-strapi",
+        //     options: {
+        //         apiURL: "http://localhost:1337",
+        //         contentTypes: [
+        //             "initial",
+        //             "header"
+        //         ],
+        //         queryLimit: 1000,
+        //     },
+        // },
         {
             resolve: `gatsby-plugin-emotion`,
             options: {

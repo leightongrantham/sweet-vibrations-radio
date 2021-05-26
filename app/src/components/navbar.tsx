@@ -4,12 +4,17 @@ import { Navbar } from 'react-bulma-components';
 import { Link } from 'gatsby';
 
 const NavigationBar = ({ navItem1, navItem2, navItem3 }) => {
+    const [ isActive, setIsActive ] = React.useState(false);
+
     return (
         <Navbar className={'animate__animated animate__fadeInDown'}>
             <Navbar.Brand>
-                <Navbar.Burger />
+                <Navbar.Burger
+                    className={`navbar-burger burger ${ isActive ? 'is-active' : ''}`}
+                    onClick={ () => { setIsActive(!isActive) }}
+                />
             </Navbar.Brand>
-            <Navbar.Menu>
+            <Navbar.Menu className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
                 <Navbar.Container>
                     <Navbar.Item>
                         <Link to="/contact/">{ navItem2 }</Link>
@@ -22,7 +27,7 @@ const NavigationBar = ({ navItem1, navItem2, navItem3 }) => {
                 </Navbar.Container>
                 <Navbar.Container align="right">
                     <Navbar.Item>
-                        <Link to="/shows/">{ navItem3 }</Link>
+                        <Link to="/">{ navItem3 }</Link>
                     </Navbar.Item>
                 </Navbar.Container>
             </Navbar.Menu>

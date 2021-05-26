@@ -1,17 +1,8 @@
 import * as React from 'react';
 
 const SoundcloudPlayer = () => (
-    <div style={ {
-        display: `flex`,
-        position: `relative`,
-        top: `110px`,
-        alignItems: `center`,
-        justifyContent: `center`,
-        width: `100%`,
-        height: `100vh`
-    } }>
-        <iframe style={ { position: `absolute`, width: `65%`, height: `50%` } }
-                width="434"
+    <div style={{ marginTop: `30vh` }}>
+        <iframe width="434"
                 height="500"
                 scrolling="no"
                 frameBorder="no"

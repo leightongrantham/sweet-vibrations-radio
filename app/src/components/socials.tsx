@@ -11,6 +11,7 @@ const Socials = () => {
                 bottom: 0,
                 textAlign: `center`,
                 width: `100%`,
+                fontSize: `1rem`,
             } }
         >
             <a target="_blank" href={ "https://www.facebook.com/katbrownsugar/" }>

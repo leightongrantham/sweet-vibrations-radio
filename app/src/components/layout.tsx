@@ -35,21 +35,6 @@ const Layout = ({children}) => {
             <main>
                 { children }
             </main>
-            <footer
-                style={ {
-                    marginTop: `2rem`,
-                    margin: `0 auto`,
-                    position: `fixed`,
-                    bottom: 0,
-                    textAlign: `center`,
-                    width: `100%`,
-                } }
-            >
-                <h1></h1>
-                {/*© { new Date().getFullYear() }, Built by*/ }
-                {/*{ ` ` }*/ }
-                {/*<a target='_blank' href='https://www.linkedin.com/in/leightongrantham/'>Leighton Grantham</a>*/ }
-            </footer>
         </>
     )
 };

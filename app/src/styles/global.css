@@ -68,7 +68,7 @@ a.navbar-item:hover {
     margin-top: 13vh;
 }
 
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 800px) {
     .index__banner__h1 {
         font-size: 6.9rem;
         top: 4rem;

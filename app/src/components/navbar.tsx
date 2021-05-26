@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { Navbar } from 'react-bulma-components';
 import { Link } from 'gatsby';
+import { useRef } from 'react';
 
 const NavigationBar = ({ navItem1, navItem2, navItem3 }) => {
     const [ isActive, setIsActive ] = React.useState(false);
@@ -26,7 +27,7 @@ const NavigationBar = ({ navItem1, navItem2, navItem3 }) => {
                     </Navbar.Item>
                 </Navbar.Container>
                 <Navbar.Container align="right">
-                    <Navbar.Item>
+                    <Navbar.Item onClick={ () => ScrollDemo } >
                         <Link to="/">{ navItem3 }</Link>
                     </Navbar.Item>
                 </Navbar.Container>
@@ -40,3 +41,11 @@ NavigationBar.propTypes = {};
 NavigationBar.defaultProps = {};
 
 export default NavigationBar;
+
+const ScrollDemo = () => {
+    const myRef = useRef(null);
+    const executeScroll = () => myRef.current.scrollIntoView();
+
+    return executeScroll();
+};
+

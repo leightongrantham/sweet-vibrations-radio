@@ -58,9 +58,9 @@ const isIndexPage = () => {
     const url = typeof window !== 'undefined' ? window.location.href : '';
 
     // Todo change to deployment urls
-    return url !== 'http://localhost:8000/contact/';
+    // return url !== 'http://localhost:8000/contact/';
 
-    // return url !== 'https://sweetvibrationsradio.netlify.app/contact/';
+    return url !== 'https://sweetvibrationsradio.netlify.app/contact/';
 };
 
 export default Header;

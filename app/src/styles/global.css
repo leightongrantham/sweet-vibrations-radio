@@ -31,8 +31,7 @@
 
 a.navbar-item:hover {
     background: none !important;
-    opacity: 0.5;
-    transition: all 0.4s ease;
+    opacity: 1 !important;
 }
 
 #gatsby-focus-wrapper > header > div > nav > div.navbar-menu > div > a > a {
@@ -68,10 +67,32 @@ a.navbar-item:hover {
     margin-top: 13vh;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
     .index__banner__h1 {
-        font-size: 6.9rem;
+        font-size: 5.9rem;
         top: 4rem;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .index__banner__h1 {
+        font-size: 5.7rem;
+        top: 4rem;
+    }
+
+    .index__banner__p {
+        font-size: 1.5rem !important;
+        top: 45vh !important;
+    }
+}
+@media only screen and (max-width: 397px) {
+    .index__banner__h1 {
+        font-size: 4.9rem;
+        top: 4rem;
+    }
+
+    .index__banner__p {
+        font-size: 1.5rem !important;
+        top: 40vh !important;
     }
 }
 
@@ -81,10 +102,6 @@ a.navbar-item:hover {
 /*        top: 4rem;*/
 /*    }*/
 /*}*/
-
-.nav__container {
-    width: 20%;
-}
 
 @media only screen and (max-width: 1024px) {
     .nav__container {

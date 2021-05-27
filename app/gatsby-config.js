@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: `Sweet Vibrations Radio`,
-        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+        description: `Welcome to Sweet Vibrations Radio.`,
         author: `@gatsbyjs`,
     },
     plugins: [

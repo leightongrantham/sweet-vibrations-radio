@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import Layout from '../components/layout'
-import Seo from '../components/seo'
+import Layout from '../components/layout';
+import Seo from '../components/seo';
 import Socials from '../components/socials';
 import SoundcloudPlayer from '../components/soundcloud-player';
 
@@ -18,7 +18,7 @@ const IndexPage = () => (
                     marginWidth="0">
             </iframe>
         </div>
-        <div style={ { display: `flex`, width: `100%`, height: `100vh`, justifyContent: `center`, top: `92vh`, position: `relative` }}>
+        <div style={ { display: `flex`, width: `100%`, height: `118vh`, justifyContent: `center`, top: `92vh`, position: `relative` }}>
             <h3 className={ 'shows__h1' }> Shows </h3>
             <p style={ { fontSize: `1.5rem`, marginTop: `25vh` } } className={ 'shows__h1' }> NEW DRIVETIME SHOWS WEDS - FRI 4PM-7 BST </p>
             <SoundcloudPlayer/>
@@ -34,9 +34,10 @@ const IndexPage = () => (
                 width: `100%`,
             } }
         >
-            { new Date().getFullYear() }, Built by }
+            { new Date().getFullYear() }, Built by
             <a target='_blank' href='https://www.linkedin.com/in/leightongrantham/'>Leighton Grantham</a>
         </footer>
+        <div id="footer"></div>
     </Layout>
 );
 

@@ -33,8 +33,8 @@ const Header = () => {
                     <h1 className={ 'index__banner__h1 animate__animated animate__pulse' }>
                         Sweet Vibrations Radio
                     </h1>
-                    <p style={ {fontSize: `2rem`, top: `40vh`} }
-                       className={ 'index__banner__h1 animate__animated animate__pulse ' }>
+                    <p style={ { fontSize: `2rem`, top: `40vh` } }
+                       className={ 'index__banner__h1 index__banner__p animate__animated animate__pulse ' }>
                         Playing the best in Alt Rnb | Neo-soul | Hip-hop | Beats
                     </p>
                     <div className={ 'nav__container' }>

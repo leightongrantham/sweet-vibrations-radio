@@ -11,7 +11,6 @@ const TwoSectionLayout = ({titleHeading, bodyText}) => (
                  width: `50%`,
                  height: `100%`
              } }>
-            <h1></h1>
         </div>
         <div className={ 'two-page-layout--right' }
              style={ {
@@ -28,7 +27,7 @@ const TwoSectionLayout = ({titleHeading, bodyText}) => (
                 marginTop: `140px`,
                 textAlign: `center`,
                 letterSpacing: `2px`,
-                fontSize: `1.3rem`
+                fontSize: `2vw;`
             } }> { bodyText }
             </p>
 

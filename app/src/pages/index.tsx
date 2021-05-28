@@ -18,9 +18,9 @@ const IndexPage = () => (
                     marginWidth="0">
             </iframe>
         </div>
-        <div style={ { display: `flex`, width: `100%`, height: `118vh`, justifyContent: `center`, top: `92vh`, position: `relative` }}>
+        <div style={ { display: `flex`, width: `100%`, height: `110vh`, justifyContent: `center`, top: `92vh`, position: `relative` }}>
             <h3 className={ 'shows__h1' }> Shows </h3>
-            <p style={ { fontSize: `1.5rem`, marginTop: `25vh` } } className={ 'shows__h1' }> NEW DRIVETIME SHOWS WEDS - FRI 4PM-7 BST </p>
+            <p style={ { fontSize: `1.5rem`, marginTop: `25vh` } } className={ 'shows__h1' }> Friday nights + Special shows </p>
             <SoundcloudPlayer/>
         </div>
         <Socials/>

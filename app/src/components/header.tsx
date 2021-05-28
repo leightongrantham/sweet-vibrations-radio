@@ -35,7 +35,7 @@ const Header = () => {
                     </h1>
                     <p style={ { fontSize: `2rem`, top: `40vh` } }
                        className={ 'index__banner__h1 index__banner__p animate__animated animate__pulse ' }>
-                        Playing the best in Alt Rnb | Neo-soul | Hip-hop | Beats
+                        Playing the best in Neo-soul | Alt Rnb | Hip-hop | Beats
                     </p>
                     <div className={ 'nav__container' }>
                         <NavigationBar navItem1={ navItem1 } navItem2={ navItem2 } navItem3={ navItem3 }/>
@@ -58,9 +58,8 @@ const isIndexPage = () => {
     const url = typeof window !== 'undefined' ? window.location.href : '';
 
     // Todo change to deployment urls
-    // return url !== 'http://localhost:8000/contact/';
 
-    return url !== 'https://sweetvibrationsradio.netlify.app/contact/';
+    return url !== 'http://www.sweetvibrationsradio.com/contact/';
 };
 
 export default Header;

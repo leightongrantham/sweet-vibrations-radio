@@ -27,7 +27,6 @@ const TwoSectionLayout = ({titleHeading, bodyText}) => (
                 marginTop: `140px`,
                 textAlign: `center`,
                 letterSpacing: `2px`,
-                fontSize: `2vw;`
             } }> { bodyText }
             </p>
 

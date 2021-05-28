@@ -17,7 +17,7 @@ const Socials = () => {
             <a target="_blank" href={ "https://www.facebook.com/katbrownsugar/" }>
                 <i className="fab fa-facebook"/>
             </a>
-            <a target="_blank" href={ "https://www.instagram.com/katbrownsugar/?hl=en" }>
+            <a target="_blank" href={ "https://www.instagram.com/sweetvibrationsradio/" }>
                 <i className="fab fa-instagram"/>
             </a>
             <a target="_blank" href={ "https://twitter.com/katbrownsugar?lang=en" }>

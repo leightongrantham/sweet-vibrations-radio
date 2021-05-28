@@ -96,6 +96,44 @@ a.navbar-item:hover {
     }
 }
 
+@media only screen and (max-width: 375px) {
+     body {
+         width: 109vw !important;
+     }
+
+    .two-page-layout--right {
+        font-size: 1.0rem !important;
+    }
+
+    .icon {
+        bottom: 80px !important;
+        font-size: 0.7rem !important;
+    }
+
+    iframe {
+        max-height: 400px !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .index__banner__h1 {
+        font-size: 3.9rem;
+        top: 4rem;
+    }
+
+    .shows__h1 {
+        font-size: 4rem;
+    }
+
+    body {
+        width: 121vw !important;
+    }
+
+    .icon {
+        display: none !important;
+    }
+}
+
 /*@media only screen and (max-width: 800px) {*/
 /*    .index__banner__h1 {*/
 /*        font-size: 6.9rem;*/

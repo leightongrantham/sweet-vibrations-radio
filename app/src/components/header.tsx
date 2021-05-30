@@ -59,7 +59,7 @@ const isIndexPage = () => {
 
     // Todo change to deployment urls
 
-    return url !== 'http://www.sweetvibrationsradio.com/contact/';
+    return url !== 'https://www.sweetvibrationsradio.com/contact/';
 };
 
 export default Header;

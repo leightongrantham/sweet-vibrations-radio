@@ -12,7 +12,9 @@
   "devDependencies": {},
   "dependencies": {
     "gatsby-source-strapi": "^0.0.12",
+    "hover.css": "^2.3.2",
     "knex": "0.21.18",
+    "react-scroll-into-view": "^1.9.3",
     "sqlite3": "5.0.0",
     "strapi": "3.6.2",
     "strapi-admin": "3.6.2",
